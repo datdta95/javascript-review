@@ -1,5 +1,5 @@
 //Ví dụ về khai báo đối tượng:
-var car = {
+var mercedes = {
     color: "red",
     model: "S550",
     //hàm trong đối tượng:
@@ -8,9 +8,14 @@ var car = {
     }
 };
 
+var bmw = new Object();
+bmw.color = "blue";
+bmw.model = "X6";
+
 //2 cách truy cập thuộc tính:
-car.color;
-car["color"];
+mercedes.color;
+mercedes["color"];
 
 //truy cập hàm ( giống java)
-car.description();
+mercedes.description();
+

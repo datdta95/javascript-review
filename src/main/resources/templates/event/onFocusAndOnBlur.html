@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    function changeColor(choice) {
+        var changeColor = document.getElementById("changeColor");
+        if (choice === 0) {
+            changeColor.style.border = "red 5px solid";
+        } else {
+            changeColor.style.border = "green 3px solid";
+        }
+    }
+</script>
+<h1>Demo onfocus + onblur</h1>
+
+<input id="changeColor" onfocus="changeColor(0)" onblur="changeColor(1)">
+<!--nếu không để onblur thì n sẽ giữ lại giá trị vừa focus(khung không thay đổi)-->
+
+</body>
+</html>

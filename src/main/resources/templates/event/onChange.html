@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    function change() {
+        var output = document.getElementById("afterChange");
+        output.innerHTML = "Đã thay đổi giá trị select";
+
+    }
+</script>
+<body>
+<h1 id="afterChange"></h1>
+<select onchange="change()">
+    <option>Dat 09</option>
+    <option>Son nh</option>
+</select>
+</body>
+</html>

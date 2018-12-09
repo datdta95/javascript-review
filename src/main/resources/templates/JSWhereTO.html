@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Where To</title>
+    <script>
+        function JsInHead() {
+            document.getElementById('demo2').innerHTML = 'Gọi đéo gọi lắm!'
+        }
+    </script>
 </head>
 <body>
     <h2>JavaScript in Body</h2>
@@ -10,5 +15,8 @@
     <script>
         document.getElementById('demo').innerHTML = 'Gọi cái ji???'
     </script>
+
+    <p id="demo2"></p>
+    <button onclick="JsInHead()">Bấm đi</button>
 </body>
 </html>

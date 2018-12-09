@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    function mouseAction(number) {
+        var action = document.getElementById("button");
+        if (number === 0) {
+            //khi chỉ chuột vào sẽ hiển thị button màu đen
+            action.style.backgroundColor = "black";
+        } else if (number === 1) {
+            //khi rê chuột ra khỏi button sẽ hiển thị màu trắng
+            action.style.backgroundColor = "white";
+        } else if (number === 2) {
+            //khi giữ chuột trái sẽ hiển thị màu vàng, con trỏ vẫn ở trong khu vực button
+            action.style.backgroundColor = "yellow";
+        } else {
+            //giữ chuột trái xong bỏ ra sẽ là màu xanh lá, con trỏ vẫn ở trong khu vực button
+            action.style.backgroundColor = "green";
+        }
+    }
+</script>
+<body>
+<H1>Demo onmouse for dummies</H1>
+<input type="button" id="button"
+       onmouseover="mouseAction(0)"
+       onmouseout="mouseAction(1)"
+       onmousedown="mouseAction(2)"
+       onmouseup="mouseAction(3)" value="Click and see your change">
+</body>
+</html>

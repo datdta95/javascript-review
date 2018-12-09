@@ -22,9 +22,6 @@ var bol = true;
 //Kieu du lieu Array
 var arrCiu = ["Long", "Tuấn Anh", "Tiến", "Trường", "Sơn", "Hậu", "Đạt"];
 
-//Kieu du lieu Object
-var student = {id:3,name:"Dat", age: 24};
-
 function addNumberIntoString() {
     x = 3 + "some";
     // Tim phan tu HTML co id la demo sau do thay noi dung cua phan tu HTML do bang gia tri cua x
@@ -37,7 +34,5 @@ function addNumberIntoStringWithOperator() {
 }
 
 function getValue() {
-    // document.getElementById("demo3").innerHTML = arrCiu[3];
-    // document.getElementById("demo3").innerHTML = student.name;
-    document.getElementById("demo3").innerHTML = typeof student;
+    document.getElementById("demo3").innerHTML = arrCiu[3];
 }

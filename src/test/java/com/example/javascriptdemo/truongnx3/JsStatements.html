@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS statements</title>
+</head>
+<body>
+<h2>JavaScript Statement</h2>
+<p>Một <b>chương trình JS</b> là một danh sách được thực thi bởi máy tính.</p>
+<p id="demo"></p>
+<script>
+    var x,y,z;
+    x = 5;
+    y = 5;
+    z = x + y;
+    document.getElementById("demo").innerHTML = "Giá trị của z là: " + z + ".";
+</script>
+
+<button type="button" onclick="funcName()">Click me</button>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+    function funcName() {
+        document.getElementById("demo1").innerHTML = "Hello Dolly";
+        document.getElementById("demo2").innerHTML = " How are you?";
+    }
+</script>
+</body>
+</html>

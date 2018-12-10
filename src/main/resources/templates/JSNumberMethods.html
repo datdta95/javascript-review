@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSNumberMethods</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        var x = 9.656;
+        document.getElementById('demo').innerHTML =
+            x.toExponential() +"<br>" +
+            x.toExponential(2) +"<br>" +
+            x.toExponential(4) +"<br>" +
+            x.toExponential(6);
+
+        var y = new Date("2017-08-30")
+        document.getElementById('demo2').innerHTML =
+            Number(y);
+
+        var z = Number.MAX_VALUE;
+        document.getElementById('demo3').innerText =
+            z;
+    </script>
+</body>
+</html>
